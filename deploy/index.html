@@ -1,0 +1,99 @@
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./normalize.css">
+<link rel="stylesheet" type="text/css" href="./skeleton.css">
+<script type="text/babel">
+class Deployer extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			bucket: 'hatchets-react-components',
+			inputs: {}
+		};
+	}
+	
+	addInput() {
+		const { inputs } = this.state;
+		const newInputs = { ...inputs };
+		const key = Date.now();
+		newInputs[key] = { name: '', suite: '' };
+		this.setState({ inputs: newInputs });
+	}
+
+	removeInput(key) {
+		const { inputs } = this.state;
+		const newInputs = { ...inputs };
+		newInputs[key] = null;
+		this.setState({ inputs: newInputs });
+	}
+
+	renderInputs() {
+		return Object.keys(this.state.inputs).map((key) => {
+			const input = this.state.inputs[key];
+			return (
+				<div style={{ display: 'flex', flexDirection: 'row' }}>
+					<input
+						style={{ marginRight: '10px' }}
+						value={input.name}
+						onChange={(event) => {
+							const newInput = { ...input };
+							newInput.name = event.target.value;
+							const newState = { ...this.state.inputs };
+							newState[key] = newInput;
+							this.setState({ inputs: newState });
+						}}
+					/>
+					<input
+						style={{ marginRight: '10px' }}
+						value={input.suite}
+						onChange={(event) => {
+							const newInput = { ...input };
+							newInput.suite = event.target.value;
+							const newState = { ...this.state.inputs };
+							newState[key] = newInput;
+							this.setState({ inputs: newState });
+						}}
+					/>
+					<button
+						style={{ backgroundColor: '#F22613', borderColor: '#F22613' }}
+						className='button-primary'
+						onClick={() => this.removeInput(key)}
+					>
+						x
+					</button>
+				</div>
+			);
+		});
+	}
+
+	render() {
+		return (
+			<div style={{ padding: '20px' }}>
+				<h1>Download Helper</h1>
+				<input
+					style={{ width: '100%' }}
+					value={this.state.bucket}
+					placeholder='Enter a bucket name!'
+					type='text'
+				/>
+				<div style={{ display: 'flex', flexDirection: 'column' }}>
+					{ this.renderInputs() }
+					<button 
+						className='button-primary' 
+						onClick={() => this.addInput()}
+					>
+						Add new field
+					</button>
+				</div>
+			</div>
+		);
+	}
+}
+
+	ReactDOM.render(
+	    <Deployer />,
+	    document.getElementById('root')
+	);
+</script>

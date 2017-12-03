@@ -1,0 +1,55 @@
+.room {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #674172;
+    color: #ddd;
+    height: 100vh;
+    padding: 25px;
+    flex: 1;
+}
+
+.window {
+    flex: 6;
+}
+
+.roomName {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.roomName:hover {
+    color: white;
+    transition: color 0.2s;
+}
+
+.memberList {
+    margin-top: 30px;
+}
+
+.addUser {
+    margin-top: 10px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.header {
+    padding-left: 20px;
+}
+
+.inviteFriend {
+    font-family: Avenir, sans-serif;
+}
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}

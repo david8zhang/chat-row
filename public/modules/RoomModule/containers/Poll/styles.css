@@ -1,0 +1,29 @@
+.topic {
+    padding: 20px;
+}
+
+.topicBody {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.topicResponse {
+    padding: 20px;
+}
+
+.topicResponseTitle {
+    margin-bottom: 5px;
+}
+
+.userOption {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.diffResponse {
+    width: 75%;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,16 @@
+.startButton {
+    padding: 20px;
+    color: #446CB3;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 10px #1F3A93;
+    cursor: pointer;
+    user-select: none;
+}
+
+.startButton:active {
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: none;
+}

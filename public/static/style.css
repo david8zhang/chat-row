@@ -1,0 +1,261 @@
+.styles__onboard___26-Bc {
+    height: 100vh;
+}
+
+.styles__step1___1rIJR {
+    padding: 80px;
+    height: 100vh;
+}
+
+.styles__step2___NXSRZ {
+    padding: 80px;
+    height: 100vh;
+}.styles__addFriend___gyAMH {
+    padding: 80px;
+    height: 100vh;
+    flex: 1;
+}
+
+.styles__addFriendWrapper___154xd {
+    display: flex;
+}
+
+.styles__image___3QcDS {
+    flex: 3;
+}.styles__createPoll___3-vc5 {
+    padding: 40px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border-color: #ddd;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.styles__infoBlurb___3-o10 {
+    flex: 1;
+}
+
+.styles__topicList___2kkkv {
+    flex: 2;
+    margin-bottom: 20px;
+}
+
+.styles__newTopicForm___HJ8Uv {
+    flex: 1;
+    width: 100%;
+}
+
+.styles__topic___o6DGO {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    background-color: #eee;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.styles__room___2imc3 {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.styles__sidebar___3tmyi {
+    background-color: #674172;
+    color: #ddd;
+    height: 100vh;
+    padding: 25px;
+    flex: 1;
+}
+
+.styles__window___1hrJ1 {
+    flex: 6;
+}
+
+.styles__roomName___yUdmk {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.styles__roomName___yUdmk:hover {
+    color: white;
+    transition: color 0.2s;
+}
+
+.styles__memberList___1DGFh {
+    margin-top: 30px;
+}
+
+.styles__addUser___AchBH {
+    margin-top: 10px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.styles__header___1E4-- {
+    padding-left: 20px;
+}
+
+.styles__inviteFriend___1Wtxa {
+    font-family: Avenir, sans-serif;
+}
+
+.styles__homePage___1SmvP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}.styles__startButton___3694L {
+    padding: 20px;
+    color: #446CB3;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 10px #1F3A93;
+    cursor: pointer;
+    user-select: none;
+}
+
+.styles__startButton___3694L:active {
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: none;
+}
+.styles__loading___2ltaX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.styles__opinionSpectrum___2_LmR {
+	display: flex;
+	margin-bottom: 50px;
+	background-color: #eee;
+	padding: 30px;
+}
+
+.styles__option___3OAxk {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	align-items: center;
+	flex: 1;
+}
+
+.styles__optionText___3nQW1 {
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+.styles__bubble___xRWOY {
+	width: 25px;
+	height: 25px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	border-color: #aaa;
+	border-style: solid;
+	border-width: 2px;
+	background-color: white;
+}
+
+.styles__selected___3TcRG {
+	background-color: #aaa;
+}.styles__topic___2rka_ {
+    padding: 20px;
+}
+
+.styles__topicBody___uCaEm {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.styles__topicResponse___2cbde {
+    padding: 20px;
+}
+
+.styles__topicResponseTitle___2Qzpu {
+    margin-bottom: 5px;
+}
+
+.styles__userOption___h8sPh {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.styles__diffResponse___3O_YH {
+    width: 75%;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}.styles__users___2OJRD {
+    display: flex;
+    flex-direction: row;
+}
+
+.styles__user___Po7JV {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.styles__header___21GAe {
+    padding: 20px;
+}
+
+.styles__messageWindow___iJ1op {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.styles__newChatInput___3uVgG {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 83.33%;
+}
+
+.styles__message___2a03D {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.styles__messages___2hPXu {
+    height: 84vh;
+    overflow-y: scroll;
+    white-space: nowrap;
+}.styles__base___wAN5I {
+    font-family: Avenir, sans-serif;
+}
+
+.styles__home___ac31q {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    height: 100vh;
+    background-color: #446CB3;
+}
+
+.styles__blurb___36XhC {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.styles__logo___1esDu {
+    font-size: 50px;
+    font-weight: 800;
+}

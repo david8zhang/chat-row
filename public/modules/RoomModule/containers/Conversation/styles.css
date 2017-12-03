@@ -1,0 +1,41 @@
+.users {
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.header {
+    padding: 20px;
+}
+
+.messageWindow {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.newChatInput {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 83.33%;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.messages {
+    height: 84vh;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
