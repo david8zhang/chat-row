@@ -80769,7 +80769,7 @@
 	                {
 	                    style: {
 	                        height: '100vh',
-	                        overflowY: 'scoll',
+	                        overflowY: 'scroll',
 	                        whiteSpace: 'nowrap'
 	                    }
 	                },
