@@ -133,7 +133,13 @@ class Poll extends Component {
     renderResults() {
         const { topics } = this.props.poll;
         return (
-            <div>
+            <div 
+                style={{ 
+                    height: '100vh', 
+                    overflowY: 'scoll', 
+                    whiteSpace: 'nowrap'
+                }}
+            >
                 <h1 style={{ padding: '20px', margin: '0px' }}>
                     Poll Results
                 </h1>

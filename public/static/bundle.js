@@ -80766,7 +80766,13 @@
 
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                {
+	                    style: {
+	                        height: '100vh',
+	                        overflowY: 'scoll',
+	                        whiteSpace: 'nowrap'
+	                    }
+	                },
 	                _react2.default.createElement(
 	                    'h1',
 	                    { style: { padding: '20px', margin: '0px' } },
