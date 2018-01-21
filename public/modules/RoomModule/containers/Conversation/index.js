@@ -121,6 +121,7 @@ class Conversation extends Component {
                     />
                     <button 
                         className='button-primary'
+                        onClick={() => this.addMessage()}
                         style={{ marginLeft: '10px' }}
                     >
                         send

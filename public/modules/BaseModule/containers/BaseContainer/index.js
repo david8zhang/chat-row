@@ -29,19 +29,30 @@ firebase.initializeApp(fbConf);
 class BaseContainer extends Component {
 	renderContent() {
 		const home = (
-			<div className={styles.home}>
-				<h1 className={styles.logo}>
-					Chat Row
-				</h1>
-				<p className={styles.blurb}>
-					Discuss anything you want with your friends. Learn something
-					new from disagreements. Burst your social media bubble, using
-					your social network.
-				</p>
-				<Button 
-					onClick={() => browserHistory.push('/onboard')}
-					text='Start a Conversation'
-				/>
+			<div
+				style={{ 
+					backgroundImage: "url('static/images/circles-dark.png')"
+				}}
+			>
+				<div className={styles.home}>
+					<img
+						src='/static/images/logo2.png'
+						alt='none'
+						style={{ width: '200px', height: '200px' }}
+					/>
+					<h1 className={styles.title}>
+						Chat Row
+					</h1>
+					<p className={styles.blurb}>
+						Discuss anything you want with your friends. Learn something
+						new from disagreements. Burst your social media bubble, using
+						your social network.
+					</p>
+					<Button 
+						onClick={() => browserHistory.push('/onboard')}
+						text='Start a Conversation'
+					/>
+				</div>
 			</div>
 		);
 		const route = this.props.location.pathname;

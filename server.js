@@ -10,7 +10,7 @@ require('css-modules-require-hook')({
 const app = require('./app');
 
 const HOST = '0.0.0.0';
-const PORT = '9000';
+const PORT = process.env.PORT || '9000';
 
 app.listen(PORT, HOST, () => {
 	console.log(`Listening at http://${HOST}:${PORT}`);

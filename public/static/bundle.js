@@ -29548,23 +29548,36 @@
 			value: function renderContent() {
 				var home = _react2.default.createElement(
 					'div',
-					{ className: _styles2.default.home },
+					{
+						style: {
+							backgroundImage: "url('static/images/circles-dark.png')"
+						}
+					},
 					_react2.default.createElement(
-						'h1',
-						{ className: _styles2.default.logo },
-						'Chat Row'
-					),
-					_react2.default.createElement(
-						'p',
-						{ className: _styles2.default.blurb },
-						'Discuss anything you want with your friends. Learn something new from disagreements. Burst your social media bubble, using your social network.'
-					),
-					_react2.default.createElement(_components.Button, {
-						onClick: function onClick() {
-							return _reactRouter.browserHistory.push('/onboard');
-						},
-						text: 'Start a Conversation'
-					})
+						'div',
+						{ className: _styles2.default.home },
+						_react2.default.createElement('img', {
+							src: '/static/images/logo2.png',
+							alt: 'none',
+							style: { width: '200px', height: '200px' }
+						}),
+						_react2.default.createElement(
+							'h1',
+							{ className: _styles2.default.title },
+							'Chat Row'
+						),
+						_react2.default.createElement(
+							'p',
+							{ className: _styles2.default.blurb },
+							'Discuss anything you want with your friends. Learn something new from disagreements. Burst your social media bubble, using your social network.'
+						),
+						_react2.default.createElement(_components.Button, {
+							onClick: function onClick() {
+								return _reactRouter.browserHistory.push('/onboard');
+							},
+							text: 'Start a Conversation'
+						})
+					)
 				);
 				var route = this.props.location.pathname;
 				if (route === '/') {
@@ -81257,6 +81270,9 @@
 	                        'button',
 	                        {
 	                            className: 'button-primary',
+	                            onClick: function onClick() {
+	                                return _this6.addMessage();
+	                            },
 	                            style: { marginLeft: '10px' }
 	                        },
 	                        'send'
@@ -81373,7 +81389,7 @@
 	"use strict";
 
 	// removed by extract-text-webpack-plugin
-	module.exports = { "base": "styles__base___wAN5I", "home": "styles__home___ac31q", "blurb": "styles__blurb___36XhC", "logo": "styles__logo___1esDu" };
+	module.exports = { "base": "styles__base___wAN5I", "home": "styles__home___ac31q", "blurb": "styles__blurb___36XhC", "title": "styles__title___2i-pT" };
 
 /***/ }),
 /* 524 */
