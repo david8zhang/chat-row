@@ -15,6 +15,7 @@ class Step1 extends Component {
                 <h1>What's the name of your conversation? (optional)</h1>
                 <p>What are you going to be talking about?</p>
                 <input
+                    autoFocus
                     onKeyDown={(e) => {
 						if (e.keyCode === 13) {
 							this.props.onClick(this.state);

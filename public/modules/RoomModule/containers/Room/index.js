@@ -244,7 +244,7 @@ class Room extends Component {
                         </p>
                         <input
                             style={{ width: '100%' }}
-                            value={`localhost:9000/friend?roomId=${roomId}`}
+                            value={`https://chat-row.herokuapp.com/friend?roomId=${roomId}`}
                             type='text' 
                             readOnly
                         />

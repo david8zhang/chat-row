@@ -55578,6 +55578,7 @@
 	                    'What are you going to be talking about?'
 	                ),
 	                _react2.default.createElement('input', {
+	                    autoFocus: true,
 	                    onKeyDown: function onKeyDown(e) {
 	                        if (e.keyCode === 13) {
 	                            _this2.props.onClick(_this2.state);
@@ -55708,6 +55709,7 @@
 	                    'Anonymity breeds trolling. It\'s good to talk on a first name basis!'
 	                ),
 	                _react2.default.createElement('input', {
+	                    autoFocus: true,
 	                    onKeyDown: function onKeyDown(e) {
 	                        if (e.keyCode === 13) {
 	                            _this2.submit();
@@ -57009,7 +57011,7 @@
 	                        ),
 	                        _react2.default.createElement('input', {
 	                            style: { width: '100%' },
-	                            value: 'localhost:9000/friend?roomId=' + roomId,
+	                            value: 'https://chat-row.herokuapp.com/friend?roomId=' + roomId,
 	                            type: 'text',
 	                            readOnly: true
 	                        })

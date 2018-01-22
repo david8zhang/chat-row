@@ -31,6 +31,7 @@ class Step2 extends Component {
                 <h1>What's your name?</h1>
                 <p>Anonymity breeds trolling. It's good to talk on a first name basis!</p>
                 <input
+                    autoFocus
                     onKeyDown={(e) => {
 						if (e.keyCode === 13) {
 							this.submit();
